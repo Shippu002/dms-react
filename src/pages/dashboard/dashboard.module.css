@@ -162,45 +162,45 @@ header {
   color: #92929d;
 }
 
-.total-order,
-.order-desc,
-.order-img,
-.order-increment,
-.increment-graph {
+.totalorder,
+.orderdesc,
+.orderimg,
+.orderincrement,
+.incrementgraph {
   margin-bottom: 0.4rem;
 }
-.order-desc,
-.report-desc {
+.orderdesc,
+.reportdesc {
   font-weight: 400;
   font-size: 14px;
 }
-.order-increment {
+.orderincrement {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   color: #ff3a29;
 }
 
-.orders-info {
+.ordersinfo {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-.order-figure {
+.orderfigure {
   font-weight: 700;
   font-size: 22px;
   color: #ff3a29;
 }
-.order-history span {
+.orderhistory span {
   font-weight: 400;
   font-size: 12px;
   margin-top: 0.8rem;
 }
-.order-processed {
+.orderprocessed {
   display: flex;
   flex-direction: column;
 }
-.processed-count {
+.processedcount {
   font-weight: 700;
   font-size: 22px;
   color: #4339f2;
@@ -211,101 +211,101 @@ header {
   color: #000000;
   opacity: 0.4;
 }
-.exchange-pool {
+.exchangepool {
   display: flex;
   justify-content: space-between;
 }
-.pool-desc h5 {
+.pooldesc h5 {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.003em;
   color: #000000;
 }
-.pool-desc span {
+.pooldesc span {
   font-weight: 400;
   font-size: 12px;
   color: #92929d;
   margin-bottom: 0.7rem;
   display: block;
 }
-.delivery-info {
+.deliveryinfo {
   display: flex;
   flex-direction: column;
 }
-.delivery-detail {
+.deliverydetail {
   display: flex;
   justify-content: space-between;
 }
-.delivery-address {
+.deliveryaddress {
   font-weight: 500;
   font-size: 14px;
   color: #000000;
   opacity: 0.4;
 }
-.delivery-amount {
+.deliveryamount {
   font-weight: 700;
   font-size: 29px;
   color: #000000;
 }
-.pool-orders {
+.poolorders {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.right-container {
+.rightcontainer {
   display: flex;
   flex-direction: column;
   flex-basis: 75%;
 }
-.top-right {
+.topright {
   display: flex;
   flex-basis: 50%;
 }
-.bottom-right {
+.bottomright {
   display: flex;
   flex-basis: 50%;
 }
 
-.right-container .grid-item {
+.rightcontainer .griditem {
   margin-left: 10px;
 }
 
-.grid-item {
+.griditem {
   margin-bottom: 1rem;
   padding: 20px;
   background-color: #fff;
 }
 
-.dms-dash-2 {
+.dmsdash2 {
   flex-basis: 25%;
 }
-.dms-dash-3 {
+.dmsdash3 {
   flex-basis: 75%;
 }
-.dms-dash-4 {
+.dmsdash4 {
   flex-basis: 35%;
 }
-.dms-dash-5 {
+.dmsdash5 {
   flex-basis: 65%;
 }
-.dms-dash-5 h1 {
+.dmsdash5 h1 {
   font-weight: 500;
   font-size: 16px;
   color: #000;
 }
 
 @media (max-width: 920px) {
-  .dms-dash {
+  .dmsdash {
     flex-direction: column;
   }
-  .top-right {
+  .topright {
     flex-direction: column;
   }
-  .bottom-right {
+  .bottomright {
     flex-direction: column;
   }
-  .right-container .grid-item {
+  .rightcontainer .griditem {
     margin-left: 0px;
   }
 }

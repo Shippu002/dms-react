@@ -12,6 +12,16 @@ import SupportIcon from "../../images/supports.png";
 import LogoutIcon from "../../images/sign-out.png";
 import SearchIcon from "../../images/search.png";
 import UserAvatar from "../../images/photo.png";
+import Order from "../../images/orders.png"
+import YellowMarker from "../../images/yellow.png"
+import Horizontal from "../../images/horizontal.png"
+import TCompanies from "../../images/t-companies.png"
+import Tcreated from "../../images/tcreated.png"
+import Tcancelled from "../../images/t-cancelled-order.png"
+import Photo2x from "../../images/Photo@2x.png"
+import BlueLine from "../../images/blue-line.png"
+import BlueBike from "../../images/bluebike.png"
+import RedLine from "../../images/red-line.png"
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
@@ -26,252 +36,255 @@ const Dashboard = () => {
             <div className={styles.sidebarcontent}>
               <ul>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img
-                        className={img - icon}
+                        className={styles.imgicon}
                         src={DashboardIcon}
                         alt="dashboard icon"
                       />
                     </span>
-                    <span className={icontext}>Dashboard</span>
-                  </a>
+                    <span className={styles.icontext}>Dashboard</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={CompanyIcon} alt="dashboard icon" />
                     </span>
-                    <span class={icontext}>Companies</span>
-                  </a>
+                    <span className={styles.icontext}>Companies</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={OrderPoolIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Order Pool</span>
-                  </a>
+                    <span className={styles.icontext}>Order Pool</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={OrderHistoryIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Order History</span>
-                  </a>
+                    <span className={styles.icontext}>Order History</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={SubscriptionIcon} alt="dashboard icon" />
                     </span>
-                    <span class={icontext}>Subscription</span>
-                  </a>
+                    <span className={styles.icontext}>Subscription</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={EarningsIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Earnings</span>
-                  </a>
+                    <span className={styles.icontext}>Earnings</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={ReportIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Reports</span>
-                  </a>
+                    <span className={styles.icontext}>Reports</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={SettingsIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Settings</span>
-                  </a>
+                    <span className={styles.icontext}>Settings</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">
-                    <span className={icon}>
+                  <Link to="#">
+                    <span className={styles.icon}>
                       <img src={SupportIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Supports</span>
-                  </a>
+                    <span className={styles.icontext}>Supports</span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="./login.html">
-                    <span className={icon}>
+                  <Link to="./login.html">
+                    <span className={styles.icon}>
                       <img src={LogoutIcon} alt="dashboard icon" />
                     </span>
-                    <span className={icontext}>Logout</span>
-                  </a>
+                    <span className={styles.icontext}>Logout</span>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className={main - container}>
+        <div className={styles.maincontainer}>
           <header>
-            <div className={search - wrapper}>
+            <div className={styles.searchwrapper}>
               <img src={SearchIcon} alt="search icon" />
               <input
                 type="search"
-                className={search - input}
+                className={styles.searchinput}
                 placeholder="Search"
               />
             </div>
-            <div className={user - wrapper}>
+            <div className={styles.userwrapper}>
               <img src={UserAvatar} alt="user avatar" />
-              <span className={indicator}></span>
-              <div className={user - info}>
-                <span className={username}>Jude Adam</span>
-                <span className={role}>Admin</span>
+              <span className={styles.indicator}></span>
+              <div className={styles.userinfo}>
+                <span className={styles.username}>Jude Adam</span>
+                <span className={styles.role}>Admin</span>
               </div>
             </div>
           </header>
-          <div className={dashboard - analysis}>
+          <div className={styles.dashboardanalysis}>
             <h1>Dashboard</h1>
-            <div className={dms - dash}>
-              <div className={left - container}>
-                <div className={card}>
-                  <div className={pool - orders}>
-                    <div className={top}>
+            <div className={styles.dmsdash}>
+              <div className={styles.leftcontainer}>
+                <div className={styles.card}>
+                  <div className={styles.poolorders}>
+                    <div className={styles.top}>
                       <h3>Total Exchange Pool Orders</h3>
-                      <img src="./image/orders.png" alt="total orders" />
+                      <img src={Order} alt="total orders" />
                     </div>
-                    <div className="bottom">
-                      <div className="number">
+                    <div className={styles.bottom}>
+                      <div className={styles.number}>
                         <h1>504</h1>
-                        <img src="./image/yellow.png" alt="" />
+                        <img src={YellowMarker} alt="" />
                       </div>
-                      <div className="moment">
+                      <div className={styles.moment}>
                         <span>Today</span>
-                        <img src="./image/horizontal.png" alt="" />
+                        <img src={Horizontal} alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="card">
-                  <div className="pool-orders">
-                    <div className="top">
+                <div className={styles.card}>
+                  <div className={styles.poolorders}>
+                    <div className={styles.top}>
                       <h3>Total Companies</h3>
-                      <img src="./image/t-companies.png" alt="total orders" />
+                      <img src={TCompanies} alt="total orders" />
                     </div>
-                    <div className="bottom">
-                      <div className="number">
+                    <div className={styles.bottom}>
+                      <div className={styles.number}>
                         <h1>504</h1>
-                        <img src="./image/yellow.png" alt="" />
+                        <img src={YellowMarker} alt="" />
                       </div>
-                      <div className="moment">
+                      <div className={styles.moment}>
                         <span>Today</span>
-                        <img src="./image/horizontal.png" alt="" />
+                        <img src={Horizontal} alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="card">
-                  <div className="pool-orders">
-                    <div className="top">
+                <div className={styles.card}>
+                  <div className={styles.poolorders}>
+                    <div className={styles.top}>
                       <h3>Total Cancelled Orders</h3>
                       <img
-                        src="./image/t-cancelled-order.png"
+                        src={Tcancelled}
                         alt="total orders"
                       />
                     </div>
-                    <div className="bottom">
-                      <div className="number">
+                    <div className={styles.bottom}>
+                      <div className={styles.number}>
                         <h1>504</h1>
-                        <img src="./image/yellow.png" alt="" />
+                        <img src={YellowMarker} alt="" />
                       </div>
-                      <div className="moment">
+                      <div className={styles.moment}>
                         <span>Today</span>
-                        <img src="./image/horizontal.png" alt="" />
+                        <img src={Horizontal} alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="card">
-                  <div className="pool-orders">
-                    <div className="top">
+                <div className={styles.card}>
+                  <div className={styles.poolorders}>
+                    <div className={styles.top}>
                       <h3>Total Created Orders</h3>
-                      <img src="./image/tcreated.png" alt="total orders" />
+                      <img src={Tcreated}alt="total orders" />
                     </div>
-                    <div className="bottom">
-                      <div className="number">
+                    <div className={styles.bottom}>
+                      <div className={styles.number}>
                         <h1>504</h1>
-                        <img src="./image/yellow.png" alt="" />
+                        <img src={YellowMarker} alt="" />
                       </div>
-                      <div className="moment">
+                      <div className={styles.moment}>
                         <span>Today</span>
-                        <img src="./image/horizontal.png" alt="" />
+                        <img src={Horizontal} alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="right-container">
-                <div className="top-right">
-                  <div className="dms-dash-2 grid-item">
-                    <h1 className="total-order">120</h1>
-                    <h4 className="order-desc">
+              <div className={styles.rightcontainer}>
+                <div className={styles.topright}>
+                  <div className={styles.dmsdash2 + styles.griditem}>
+                    <h1 className={styles.totalorder}>120</h1>
+                    <h4 className={styles.orderdesc}>
                       Companies sent orders to delivery pool today.
                     </h4>
                     <img
-                      className="order-img"
-                      src="./image/Photo@2x.png"
+                      className={styles.orderimg}
+                      src={Photo2x}
                       alt=""
                     />
-                    <h3 className="order-increment">+84%</h3>
+                    <h3 className={styles.orderincrement}>+84%</h3>
                     <img
-                      className="increment-graph"
-                      src="./image/blue-line.png"
+                      className={styles.incrementgraph}
+                      src={BlueLine}
                       alt=""
                     />
-                    <h4 className="report-desc">Comapred to yesterday</h4>
+                    <h4 className={styles.reportdesc}>Comapred to yesterday</h4>
                   </div>
-                  <div className="dms-dash-3 grid-item" id="container"></div>
+                  <div
+                    className={styles.dmsdash3 + styles.griditem}
+                    id={styles.container}
+                  ></div>
                 </div>
-                <div className="bottom-right">
-                  <div className="dms-dash-4 grid-item">
-                    <div className="exchange-pool">
-                      <div className="pool-desc">
+                <div className={styles.bottomright}>
+                  <div className={styles.dmsdash4 + styles.griditem}>
+                    <div className={styles.exchangepool}>
+                      <div className={styles.pooldesc}>
                         <h5>Exchange pool today</h5>
                         <span>Most Orders picked by:</span>
                       </div>
-                      <div className="arrow-down">
-                        <img src="./image/Horizontal.png" alt="" />
+                      <div className={styles.arrowdown}>
+                        <img src={Horizontal} alt="" />
                       </div>
                     </div>
-                    <div className="delivery-bike">
-                      <img src="./image/bluebike.png" alt="delivery-bike" />
+                    <div className={styles.deliverybike}>
+                      <img src={BlueBike} alt="delivery-bike" />
                     </div>
-                    <div className="delivery-info">
+                    <div className={styles.deliveryinfo}>
                       <h5>FZ Deliveries</h5>
-                      <div className="delivery-detail">
-                        <span className="delivery-address">Allen, Lagos</span>
-                        <span className="delivery-amount">N340,000</span>
+                      <div className={styles.deliverydetail}>
+                        <span className={styles.deliveryaddress}>Allen, Lagos</span>
+                        <span className={styles.deliveryamount}>N340,000</span>
                       </div>
                     </div>
-                    <div className="orders-info">
-                      <div className="order-count">
-                        <span className="order-figure">504</span>
+                    <div className={styles.ordersinfo}>
+                      <div className={styles.ordercount}>
+                        <span className={styles.orderfigure}>504</span>
                         <span>Orders</span>
                       </div>
-                      <div className="order-history">
-                        <img src="./image/red-line.png" alt="" />
+                      <div className={styles.orderhistory}>
+                        <img src={RedLine} alt="redline" />
                         <span>Comapared to Yesterday</span>
                       </div>
                     </div>
-                    <div className={order - processed}>
-                      <span className={processed - count}>267</span>
-                      <span className={pool}>Pushed to pool</span>
+                    <div className={styles.orderprocessed}>
+                      <span className={styles.processedcount}>267</span>
+                      <span className={styles.pool}>Pushed to pool</span>
                     </div>
                   </div>
-                  <div className="dms-dash-5 grid-item" id={wrapper}>
+                  <div className={styles.dmsdash5 + styles.griditem} id={styles.wrapper}>
                     <h1>Delivered Orders</h1>
                   </div>
                 </div>
