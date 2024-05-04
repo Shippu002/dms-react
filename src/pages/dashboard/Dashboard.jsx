@@ -112,7 +112,7 @@ const Dashboard = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="./login.html">
+                  <Link to="/login">
                     <span className={styles.icon}>
                       <img src={LogoutIcon} alt="dashboard icon" />
                     </span>
@@ -135,7 +135,7 @@ const Dashboard = () => {
             </div>
             <div className={styles.userwrapper}>
               <img src={UserAvatar} alt="user avatar" />
-              <span className={styles.indicator}></span>
+              <span className={styles.indicator}>avatar</span>
               <div className={styles.userinfo}>
                 <span className={styles.username}>Jude Adam</span>
                 <span className={styles.role}>Admin</span>
