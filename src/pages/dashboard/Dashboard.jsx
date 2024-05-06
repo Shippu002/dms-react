@@ -12,16 +12,16 @@ import SupportIcon from "../../images/supports.png";
 import LogoutIcon from "../../images/sign-out.png";
 import SearchIcon from "../../images/search.png";
 import UserAvatar from "../../images/photo.png";
-import Order from "../../images/orders.png"
-import YellowMarker from "../../images/yellow.png"
-import Horizontal from "../../images/horizontal.png"
-import TCompanies from "../../images/t-companies.png"
-import Tcreated from "../../images/tcreated.png"
-import Tcancelled from "../../images/t-cancelled-order.png"
-import Photo2x from "../../images/Photo@2x.png"
-import BlueLine from "../../images/blue-line.png"
-import BlueBike from "../../images/bluebike.png"
-import RedLine from "../../images/red-line.png"
+import Order from "../../images/orders.png";
+import YellowMarker from "../../images/yellow.png";
+import Horizontal from "../../images/horizontal.png";
+import TCompanies from "../../images/t-companies.png";
+import Tcreated from "../../images/tcreated.png";
+import Tcancelled from "../../images/t-cancelled-order.png";
+import Photo2x from "../../images/Photo@2x.png";
+import BlueLine from "../../images/blue-line.png";
+import BlueBike from "../../images/bluebike.png";
+import RedLine from "../../images/red-line.png";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
@@ -135,7 +135,7 @@ const Dashboard = () => {
             </div>
             <div className={styles.userwrapper}>
               <img src={UserAvatar} alt="user avatar" />
-              <span className={styles.indicator}>avatar</span>
+              <span className={styles.indicator}></span>
               <div className={styles.userinfo}>
                 <span className={styles.username}>Jude Adam</span>
                 <span className={styles.role}>Admin</span>
@@ -186,10 +186,7 @@ const Dashboard = () => {
                   <div className={styles.poolorders}>
                     <div className={styles.top}>
                       <h3>Total Cancelled Orders</h3>
-                      <img
-                        src={Tcancelled}
-                        alt="total orders"
-                      />
+                      <img src={Tcancelled} alt="total orders" />
                     </div>
                     <div className={styles.bottom}>
                       <div className={styles.number}>
@@ -207,7 +204,7 @@ const Dashboard = () => {
                   <div className={styles.poolorders}>
                     <div className={styles.top}>
                       <h3>Total Created Orders</h3>
-                      <img src={Tcreated}alt="total orders" />
+                      <img src={Tcreated} alt="total orders" />
                     </div>
                     <div className={styles.bottom}>
                       <div className={styles.number}>
@@ -225,16 +222,12 @@ const Dashboard = () => {
 
               <div className={styles.rightcontainer}>
                 <div className={styles.topright}>
-                  <div className={styles.dmsdash2 + styles.griditem}>
+                  <div className={`${styles.dmsdash2} ${styles.griditem}`}>
                     <h1 className={styles.totalorder}>120</h1>
                     <h4 className={styles.orderdesc}>
                       Companies sent orders to delivery pool today.
                     </h4>
-                    <img
-                      className={styles.orderimg}
-                      src={Photo2x}
-                      alt=""
-                    />
+                    <img className={styles.orderimg} src={Photo2x} alt="" />
                     <h3 className={styles.orderincrement}>+84%</h3>
                     <img
                       className={styles.incrementgraph}
@@ -244,12 +237,12 @@ const Dashboard = () => {
                     <h4 className={styles.reportdesc}>Comapred to yesterday</h4>
                   </div>
                   <div
-                    className={styles.dmsdash3 + styles.griditem}
+                    className={`${styles.dmsdash3}  ${styles.griditem}`}
                     id={styles.container}
                   ></div>
                 </div>
                 <div className={styles.bottomright}>
-                  <div className={styles.dmsdash4 + styles.griditem}>
+                  <div className={`${styles.dmsdash4}  ${styles.griditem}`}>
                     <div className={styles.exchangepool}>
                       <div className={styles.pooldesc}>
                         <h5>Exchange pool today</h5>
@@ -265,7 +258,9 @@ const Dashboard = () => {
                     <div className={styles.deliveryinfo}>
                       <h5>FZ Deliveries</h5>
                       <div className={styles.deliverydetail}>
-                        <span className={styles.deliveryaddress}>Allen, Lagos</span>
+                        <span className={styles.deliveryaddress}>
+                          Allen, Lagos
+                        </span>
                         <span className={styles.deliveryamount}>N340,000</span>
                       </div>
                     </div>
@@ -284,7 +279,10 @@ const Dashboard = () => {
                       <span className={styles.pool}>Pushed to pool</span>
                     </div>
                   </div>
-                  <div className={styles.dmsdash5 + styles.griditem} id={styles.wrapper}>
+                  <div
+                    className={`${styles.dmsdash5}  ${styles.griditem}`}
+                    id={styles.wrapper}
+                  >
                     <h1>Delivered Orders</h1>
                   </div>
                 </div>
